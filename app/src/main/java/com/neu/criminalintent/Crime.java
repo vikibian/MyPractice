@@ -9,5 +9,10 @@ public class Crime {
     public Crime(){
         //Generate unique identifier
         mId = UUID.randomUUID();
+
+    }
+
+    public UUID getId(){
+        return mId;
     }
 }
