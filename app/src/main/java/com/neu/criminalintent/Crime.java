@@ -12,6 +12,22 @@ public class Crime {
 
     }
 
+    public UUID getmId() {
+        return mId;
+    }
+
+    public void setmId(UUID mId) {
+        this.mId = mId;
+    }
+
+    public String getmTite() {
+        return mTite;
+    }
+
+    public void setmTite(String mTite) {
+        this.mTite = mTite;
+    }
+
     public UUID getId(){
         return mId;
     }
