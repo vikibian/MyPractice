@@ -10,6 +10,8 @@ import android.os.Bundle;
 
 import java.util.UUID;
 
+
+//此文件可以删除， 因为已经应用viewPager了
 public class CrimeActivity extends SingFragmentActivity{
 
 //    public static final String EXTRA_CRIME_ID = "com.neu.criminalintent.crime_id";

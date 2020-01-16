@@ -112,7 +112,11 @@ public class CrimeListFragment extends Fragment {
 
         @Override
         public void onClick(View v) {
-            Intent intent = CrimeActivity.newIntent(getActivity(), mCrime.getId());
+            //没有添加ViewPager之前
+//            Intent intent = CrimeActivity.newIntent(getActivity(), mCrime.getId());
+
+            //使用ViewPager之后
+            Intent intent = CrimePagerActivity.newIntent(getActivity(),mCrime.getId());
             startActivity(intent);
         }
     }
