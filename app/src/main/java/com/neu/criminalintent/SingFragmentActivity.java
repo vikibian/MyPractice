@@ -3,11 +3,12 @@ package com.neu.criminalintent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
-public abstract class SingFragmentActivity extends FragmentActivity {
+public abstract class SingFragmentActivity extends AppCompatActivity {
 
     protected abstract Fragment createFragment();
 
