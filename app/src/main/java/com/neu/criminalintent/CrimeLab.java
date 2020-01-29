@@ -21,12 +21,17 @@ public class CrimeLab {
     private CrimeLab(Context context){
         mCrimes = new ArrayList<>();
 
-        for (int i=0;i<100;i++){
-            Crime crime = new Crime();
-            crime.setmTitle("Crime #" + i);
-            crime.setmSolved(i%2 == 0);
-            mCrimes.add(crime);
-        }
+        //由于下面的addCrime可以自动添加Crime了所以就不需要自己生成了
+//        for (int i=0;i<100;i++){
+//            Crime crime = new Crime();
+//            crime.setmTitle("Crime #" + i);
+//            crime.setmSolved(i%2 == 0);
+//            mCrimes.add(crime);
+//        }
+    }
+
+    public void addCrime(Crime c){
+        mCrimes.add(c);
     }
 
     public List<Crime> getmCrimes(){
