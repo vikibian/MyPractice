@@ -1,5 +1,6 @@
 package com.neu.criminalintent.database.CrimeDbSchema;
 
+//数据库字段
 public class CrimeDbSchema {
     public static final class CrimeTable {
         //定义描述数据表元素的String常量
@@ -10,6 +11,7 @@ public class CrimeDbSchema {
             public static final String TITLE = "title";
             public static final String DATE = "date";
             public static final String SOLVED = "solved";
+            public static final String SUSPECT = "suspect";
         }
     }
 }
