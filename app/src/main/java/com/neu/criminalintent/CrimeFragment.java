@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -41,6 +43,8 @@ public class CrimeFragment extends Fragment {
     private CheckBox mSolvedCheckBox;
     private Button mReportButton;
     private Button mSuspectButton;
+    private ImageButton mPhotoButton;
+    private ImageView mPhotoView;
 
 
     public static CrimeFragment newInstance(UUID crimeId){
@@ -148,6 +152,9 @@ public class CrimeFragment extends Fragment {
         if (packageManager.resolveActivity(pickContact, packageManager.MATCH_DEFAULT_ONLY) == null){
             mSuspectButton.setEnabled(false);
         }
+
+        mPhotoButton = view.findViewById(R.id.crime_camera);
+        mPhotoView = view.findViewById(R.id.crime_photo);
 
         return  view;
     }
