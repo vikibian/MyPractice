@@ -121,6 +121,7 @@ public class CrimeListFragment extends Fragment {
             mAdapter = new CrimeAdapter(crimes);
             mCrimeRecycleView.setAdapter(mAdapter);
         }else {
+            mAdapter.setmCrimes(crimes);
             mAdapter.notifyDataSetChanged();
         }
 
@@ -158,8 +159,11 @@ public class CrimeListFragment extends Fragment {
         public int getItemCount() {
             return mCrimes.size();
         }
-    }
 
+        public void setmCrimes(List<Crime> crimes){
+            mCrimes = crimes;
+        }
+    }
     private class CrimeHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         private TextView mTitleTextView;
         private TextView mDateTextView;
